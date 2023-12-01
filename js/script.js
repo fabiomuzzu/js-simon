@@ -1,3 +1,6 @@
+alert('Hai 30 secondi di tempo per memorizzare i numeri!');
+setTimeout(timer, 30000);
+
 // 1 -  Creo l'arrey che deve contenere 5 numeri vuoto
 let numbers = [];
 
@@ -20,6 +23,11 @@ const num_display = document.getElementById('num_display');
 num_display.innerText = `I 5 numeri casuali sono: ${numbers}`
 
 // 6 - Creo un timer di 30 secondi con setTimeout
+function timer(){
+    // cancello testo in pagina
+    num_display.innerText = ` `
+}
+
 // 7 - Rimuovo i numeri dal html allo scadere dei 30 secondi
 // 8 - Creo i prompt di inserimento numero (utilizzando il while)
 // 9 - Se il numero inserito è corretto lo metto in un secondo arrey, così posso determinarne la lunghezza
