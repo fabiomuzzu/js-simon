@@ -11,3 +11,14 @@ Consigli del giorno:
 * Pensate prima in italiano.
 * Dividete in piccoli problemi la consegna.
 * Individuate gli elementi di cui avete bisogno per realizzare il programma
+
+Svolgimento:
+1 -  Creo l'arrey vuoto
+2 - Creo la formula di numeri casuale
+3 -  Li pusho nell'arrey
+4 - Creo un tag nell'html
+5 - Li inserisco nell'html
+6 - Creo un timer di 30 secondi con setTimeout
+7 - Rimuovo i numeri dal html allo scadere dei 30 secondi
+8 - Creo i prompt di inserimento numero (utilizzando il while)
+9 - Se il numero inserito è corretto lo metto in un secondo arrey, così posso determinarne la lunghezza
