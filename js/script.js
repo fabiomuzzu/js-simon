@@ -38,8 +38,8 @@ for (let i=0; i<numbers.length; i++){
     const ask_num = prompt('Inserisci i 5 numeri visti in precedenza');
     // pushare dati inseriti nel prompt nell'array
     user_num.push(ask_num);
+    
 }
-
 console.log(`I 5 numeri che hai inserito sono: ${user_num}`);
 
-// 9 - Se il numero inserito è corretto lo metto in un secondo arrey, così posso determinarne la lunghezza
+// 9 - Comparazione dei due array

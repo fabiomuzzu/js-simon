@@ -21,4 +21,4 @@ Svolgimento:
 6 - Creo un timer di 30 secondi con setTimeout
 7 - Rimuovo i numeri dal html allo scadere dei 30 secondi
 8 - Creo i prompt di inserimento numero (utilizzando il while)
-9 - Se il numero inserito è corretto lo metto in un secondo arrey, così posso determinarne la lunghezza
+9 - Comparazione dei due array
