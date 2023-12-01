@@ -29,10 +29,17 @@ function timer(){
     num_display.innerText = ` `;
 }
 
-// 8 - Creo i prompt di inserimento numero (utilizzando il while)
-while(numbers.length < 5){
-   let ask_numbers = prompt('Inserisci i 5 numeri visti in precedenza');
-   numbers++;
-   console.log(ask_numbers);
+// 8 - Creo il prompt di inserimento dei numeri
+
+let user_num = [];
+
+// ciclo for per creare i prompt necessari
+for (let i=0; i<numbers.length; i++){
+    const ask_num = prompt('Inserisci i 5 numeri visti in precedenza');
+    // pushare dati inseriti nel prompt nell'array
+    user_num.push(ask_num);
 }
+
+console.log(`I 5 numeri che hai inserito sono: ${user_num}`);
+
 // 9 - Se il numero inserito è corretto lo metto in un secondo arrey, così posso determinarne la lunghezza
