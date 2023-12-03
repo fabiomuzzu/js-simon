@@ -1,5 +1,7 @@
 alert('Hai 30 secondi di tempo per memorizzare i numeri!');
-setTimeout(timer, 3000);
+setTimeout(timer, 30000);
+setTimeout(asktimer, 31000);
+
 
 // 1 -  Creo l'arrey che deve contenere 5 numeri vuoto
 let numbers = [];
@@ -29,17 +31,36 @@ function timer(){
     num_display.innerText = ` `;
 }
 
-// 8 - Creo il prompt di inserimento dei numeri
+// 8 - Creo  un timer in cui inserisco i prompt di inserimento numero ed il resto delle funzioni
 
 let user_num = [];
 
 // ciclo for per creare i prompt necessari
-for (let i=0; i<numbers.length; i++){
-    const ask_num = prompt('Inserisci i 5 numeri visti in precedenza');
-    // pushare dati inseriti nel prompt nell'array
-    user_num.push(ask_num);
+function asktimer(){
+    for (let i=0; i<numbers.length; i++){
+        const ask_num = prompt('Inserisci i 5 numeri visti in precedenza');
+        // pushare dati inseriti nel prompt nell'array
+        user_num.push(ask_num);
+        
+    }
+    console.log(`I 5 numeri che hai inserito sono: ${user_num}`);
     
+    // 9 - Comparazione dei due array
+    function compareArray() {
+        // array vuoto in cui verranno pushati i numeri uguali
+        let samenumbers = [];
+        // ciclo for per comparare ogni elemento degli array
+        for (let i = 0; i < numbers.length; i++)
+            // if che pusha nell'array vuoto i numeri uguali
+            if (numbers[i] == user_num[i]){
+                samenumbers.push(numbers[i]);
+            }
+        return samenumbers
+    }
+    
+    let samenumbers = compareArray();
+    
+    // 11 - Inserisco lo score nell'html
+    const score = document.getElementById('score');
+    score.innerText = `Il totale di numeri indovinati è: ${samenumbers.length}! ${samenumbers}!`;
 }
-console.log(`I 5 numeri che hai inserito sono: ${user_num}`);
-
-// 9 - Comparazione dei due array

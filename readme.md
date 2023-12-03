@@ -20,5 +20,8 @@ Svolgimento:
 5 - Li inserisco nell'html
 6 - Creo un timer di 30 secondi con setTimeout
 7 - Rimuovo i numeri dal html allo scadere dei 30 secondi
-8 - Creo i prompt di inserimento numero (utilizzando il while)
+8 - Creo  un timer in cui inserisco i prompt di inserimento numero ed il resto delle funzioni
 9 - Comparazione dei due array
+10 - Creo tag html in cui riportare lo score
+11 - Inserisco lo sore nell'html
+
