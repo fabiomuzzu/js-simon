@@ -45,6 +45,7 @@ function asktimer(){
     }
     console.log(`I 5 numeri che hai inserito sono: ${user_num}`);
     
+    // richiamo la funzione per comparare gli array successivamente ai prompt
     let samenumbers = compareArray();
     
     // 11 - Inserisco lo score nell'html
