@@ -45,22 +45,23 @@ function asktimer(){
     }
     console.log(`I 5 numeri che hai inserito sono: ${user_num}`);
     
-    // 9 - Comparazione dei due array
-    function compareArray() {
-        // array vuoto in cui verranno pushati i numeri uguali
-        let samenumbers = [];
-        // ciclo for per comparare ogni elemento degli array
-        for (let i = 0; i < numbers.length; i++)
-            // if che pusha nell'array vuoto i numeri uguali
-            if (numbers[i] == user_num[i]){
-                samenumbers.push(numbers[i]);
-            }
-        return samenumbers
-    }
-    
     let samenumbers = compareArray();
     
     // 11 - Inserisco lo score nell'html
     const score = document.getElementById('score');
     score.innerText = `Il totale di numeri indovinati è: ${samenumbers.length}! ${samenumbers}!`;
 }
+
+// 9 - Comparazione dei due array
+function compareArray() {
+    // array vuoto in cui verranno pushati i numeri uguali
+    let samenumbers = [];
+    // ciclo for per comparare ogni elemento degli array
+    for (let i = 0; i < numbers.length; i++)
+        // if che pusha nell'array vuoto i numeri uguali
+        if (numbers[i] == user_num[i]){
+            samenumbers.push(numbers[i]);
+        }
+    return samenumbers
+}
+
