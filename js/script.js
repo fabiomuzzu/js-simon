@@ -38,7 +38,7 @@ let user_num = [];
 // ciclo for per creare i prompt necessari
 function asktimer(){
     for (let i=0; i<numbers.length; i++){
-        const ask_num = prompt('Inserisci i 5 numeri visti in precedenza');
+        const ask_num = parseInt(prompt('Inserisci i 5 numeri visti in precedenza'));
         // pushare dati inseriti nel prompt nell'array
         user_num.push(ask_num);
         
@@ -59,8 +59,8 @@ function compareArray() {
     // ciclo for per comparare ogni elemento degli array
     for (let i = 0; i < numbers.length; i++)
         // if che pusha nell'array vuoto i numeri uguali
-        if (numbers[i] == user_num[i]){
-            samenumbers.push(numbers[i]);
+        if (numbers.includes(user_num[i])){
+            samenumbers.push(user_num[i]);
         }
     return samenumbers
 }
